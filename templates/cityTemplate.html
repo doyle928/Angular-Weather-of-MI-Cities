@@ -1,8 +1,8 @@
 <form>
-  <input type="text" placeholder="City" />
-  <input type="text" placeholder="City" />
-  <input type="text" placeholder="City" />
-  <input type="text" placeholder="City" />
-  <input type="text" placeholder="City" />
-  <button>Submit</button>
+  <input ng-model="city1" type="text" placeholder="City">
+  <input ng-model="city2" type="text" placeholder="City">
+  <input ng-model="city3" type="text" placeholder="City">
+  <input ng-model="city4" type="text" placeholder="City">
+  <input ng-model="city5" type="text" placeholder="City">
+  <button ng-click="findLongestName(city1, city2, city3, city4, city5)">Submit</button>
 </form>

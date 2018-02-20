@@ -1,15 +1,28 @@
-(function () {
-    var cityComponent = {
-        templateUrl: "templates/weatherTemplate.html",
+(function() {
+  var cityComponent = {
+    templateUrl: "templates/cityTemplate.html",
 
-        controller: function () {
-            var vm = this;
-            }
-    };
-
-
-
-    angular.module("app")
-        .component("cityComponent", cityComponent);
+    controller: function() {
+      var $ctrl = this;
+      $ctrl.longest = "";
+      $ctrl.findLongestName = function(city1, city2, city3, city4, city5) {
+        $ctrl.longest = city1;
+        if ($ctrl.longest <= city2.length) {
+          $ctrl.longest = city2;
+        }
+        if ($ctrl.longest <= city3.length) {
+          $ctrl.longest = city3;
+        }
+        if ($ctrl.longest <= city4.length) {
+          $ctrl.longest = city4;
+        }
+        if ($ctrl.longest <= city5.length) {
+          $ctrl.longest = city5;
+        }
+      };
+    }
+  };
+  angular.module("app")
+    .component("cityComponent", cityComponent);
 
 })();
