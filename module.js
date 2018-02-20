@@ -1,3 +1,3 @@
 (function(){
-    angular.module("GuessLocation", ["ngRoute"])
+    angular.module("app", ["ngRoute"])
 })();
