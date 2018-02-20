@@ -7,4 +7,14 @@ body{
     position: absolute;
     left: -10px;
     top: -10px;
+    z-index: -1;
+}
+.form {
+  background-color: white;
+  z-index: 1;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
 }
