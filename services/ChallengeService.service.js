@@ -6,10 +6,10 @@
       setCity: setCity
     }
     function getCity() {
-      return ;
+      return cityNames;
     }
-    function setCity() {
-       
+    function setCity(list) {
+       cityNames = list;
     }
   }
   angular
