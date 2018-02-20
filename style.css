@@ -1,0 +1,10 @@
+body{
+    overflow: hidden;
+}
+#backGround {
+    overflow: hidden;
+    width: 102%;
+    position: absolute;
+    left: -10px;
+    top: -10px;
+}
