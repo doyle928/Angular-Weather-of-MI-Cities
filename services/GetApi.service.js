@@ -13,6 +13,7 @@
         };
 
         function searchWeather(city) {
+            city = city.replace(/ /g,'_');
             weatherData.city = "";
             return $http({
                 method: 'GET',
