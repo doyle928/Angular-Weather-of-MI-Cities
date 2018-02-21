@@ -6,16 +6,19 @@
     <title>The city</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,700" rel="stylesheet">
 </head>
 <body ng-app="app">
     <img id="backGround" src="city.jpg" />
-    <city-component></city-component>
+    <ng-view></ng-view>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular-route.js"></script>
     <script src="module.js"></script>
     <script src="config.js"></script>
-    <script src="components/cityComponent.js"></script>
-    <script src="components/weatherComponent.js"></script>
+    <script src="components/city.component.js"></script>
+    <script src="components/weather.component.js"></script>
+    <script src="components/start.component.js"></script>
+    <script src="components/restart.component.js"></script>
     <script src="services/ChallengeService.service.js"></script>
     <script src="services/GetApi.service.js"></script>
 </body>

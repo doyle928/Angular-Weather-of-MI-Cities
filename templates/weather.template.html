@@ -1,0 +1,9 @@
+<div id="weather">
+    <h1 id="weatherTemp">{{ $ctrl.weatherData.temp }}<span class="degreeSymbol">°</span></h1>
+    <span id="flexMeBaby">
+    <p class="weatherInfo">{{ $ctrl.weatherData.city }}</p>
+    <p class="weatherInfo">{{ $ctrl.weatherData.weather }}</p>
+    </span>
+    <img src="{{ $ctrl.weatherData.icon }}" />
+
+</div>
