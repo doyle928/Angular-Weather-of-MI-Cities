@@ -2,7 +2,12 @@
     var startComponent = {
       templateUrl: "templates/start.template.html",
   
-      controller: function() {
+      controller: function(GetApi) {
+        var vm = this;
+        vm.starter = function(){
+          getApi.SearchWeaher("detroit");
+
+        }
         
       }
     };
