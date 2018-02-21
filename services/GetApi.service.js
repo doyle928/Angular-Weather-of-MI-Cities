@@ -21,6 +21,8 @@
                 console.log(city);
                 weatherData.city = response.data.current_observation.display_location.full;
                 weatherData.temp = response.data.current_observation.temp_f;
+                weatherData.temp = parseInt(weatherData.temp);
+                weatherData.temp = Math.floor(weatherData.temp);
                 weatherData.weather = response.data.current_observation.weather;
                 weatherData.icon = response.data.current_observation.icon_url;
                 console.log(weatherData.city);
