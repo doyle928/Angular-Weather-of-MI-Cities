@@ -26,6 +26,7 @@
             longest = "";
             cityNames = city;
             console.log(cityNames);
+            longest = "";
         }
     }
     angular
