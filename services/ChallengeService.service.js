@@ -25,6 +25,7 @@
         function setCity(city) {
             cityNames = city;
             console.log(cityNames);
+            longest = "";
         }
     }
     angular
