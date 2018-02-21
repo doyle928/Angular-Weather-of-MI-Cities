@@ -23,6 +23,7 @@
         }
 
         function setCity(city) {
+            longest = "";
             cityNames = city;
             console.log(cityNames);
         }
