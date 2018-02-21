@@ -2,9 +2,10 @@
     var restartComponent = {
         templateUrl: "templates/restart.template.html",
 
-        controller: function (GetApi) {
+        controller: function (ChallengeService) {
             var vm = this;
-            vm.weatherData = GetApi.returnResults();
+            vm.weatherData = "";
+            vm.weatherData = ChallengeService.getCity();
             
         }
     };

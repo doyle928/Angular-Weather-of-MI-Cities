@@ -12,12 +12,13 @@
             searchWeather: searchWeather
         };
 
-        function searchWeather(ChallengeService) {
+        function searchWeather(city) {
             weatherData.city = "";
             return $http({
                 method: 'GET',
-                url: 'http://api.wunderground.com/api/6223b2f5321ee9e1/conditions/q/michigan/' + ChallengeService.getCity + '.json'
+                url: 'http://api.wunderground.com/api/6223b2f5321ee9e1/conditions/q/michigan/' + city + '.json'
             }).then(function successfulCallback(response) {
+                console.log(city);
                 weatherData.city = response.data.current_observation.display_location.full;
                 weatherData.temp = response.data.current_observation.temp_f;
                 weatherData.weather = response.data.current_observation.weather;

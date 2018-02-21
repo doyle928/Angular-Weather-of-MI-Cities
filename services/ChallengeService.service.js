@@ -1,5 +1,5 @@
 (function () {
-    function ChallengeService() {
+    function ChallengeService(GetApi) {
         var cityNames = {};
         var longest = "";
 
@@ -17,6 +17,7 @@
                 }
             }
             //GetApi.searchWeather(longest);
+            
             return longest;
 
         }

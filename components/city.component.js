@@ -5,9 +5,9 @@
     controller: function(ChallengeService,GetApi) {
       var $ctrl = this;
       $ctrl.findLongestName = function (city){
-        ChallengeService.setCity(city);
-        ChallengeService.getCity();
-        GetApi.searchWeather();
+        ChallengeService.setCity(city); //sets array in challenge service
+        // ChallengeService.getCity();
+        GetApi.searchWeather(ChallengeService.getCity());
       }
     }
   };
