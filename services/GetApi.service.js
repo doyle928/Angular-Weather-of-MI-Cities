@@ -14,6 +14,7 @@
 
         function searchWeather(city) {
             weatherData.city = "";
+            if(cit)
             return $http({
                 method: 'GET',
                 url: 'http://api.wunderground.com/api/6223b2f5321ee9e1/conditions/q/michigan/' + city + '.json'
