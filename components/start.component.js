@@ -5,8 +5,7 @@
       controller: function(GetApi) {
         var vm = this;
         vm.starter = function(){
-          getApi.SearchWeaher("detroit");
-
+           getApi.searchWeather("detroit");
         }
         
       }
