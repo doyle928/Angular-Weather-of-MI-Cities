@@ -1,10 +1,10 @@
 (function () {
     function GetApi($http) {
         var weatherData = {
-            city: "Detroit, MI",
-            temp: "45",
-            weather: "It's cold!",
-            icon: "http://icons.wxug.com/i/c/k/nt_cloudy.gif"
+            city: "-",
+            temp: "0",
+            weather: "-",
+            icon: "http://icons.wxug.com/i/c/k/sunny.gif"
         }
 
         return {
@@ -14,7 +14,7 @@
 
         function searchWeather(city) {
             weatherData.city = "";
-            if(cit)
+            
             return $http({
                 method: 'GET',
                 url: 'http://api.wunderground.com/api/6223b2f5321ee9e1/conditions/q/michigan/' + city + '.json'

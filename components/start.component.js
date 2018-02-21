@@ -4,9 +4,9 @@
   
       controller: function(GetApi) {
         var vm = this;
-        vm.starter = function(){
-           getApi.searchWeather("detroit");
-        }
+        
+           GetApi.searchWeather("detroit");
+        
         
       }
     };
